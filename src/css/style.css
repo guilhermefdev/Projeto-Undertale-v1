@@ -17,7 +17,7 @@ a {
 
 body {
     width: 100%;
-    background-color: #d53bff;
+    background-color: #18091C;
 }
 
 .endings img, .cabecalho img {
@@ -62,7 +62,7 @@ body {
     padding-top: 80px;
     overflow: hidden;
     width: 100%;
-    background: rgb(30, 19, 45);
+    background: #1e132d;
     background: linear-gradient(0deg, rgba(48, 32, 70, 0.904) 0%, rgba(30, 19, 45, 0) 30%);
     outline: 3px solid #EA2027;
 }
