@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Determination Mono', sans-serif;
+    list-style: none;
+    color: #858585;
+    
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    width: 100%;
+    background-color: #d53bff;
+}
+
+.endings img, .cabecalho img {
+    max-width: 100%; 
+    /* PAREU AQUIIIIIIIIIIIIIIIIIIIIIIIIII TO AJEITANDO A LOGO UNDERTALE FODA */
+}
+
+
+.cabecalho {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    outline: 3px solid #EA2027;
+    position: fixed;
+    z-index: 5;
+
+}
+
+.cabecalho .logo {
+    width: 400px;
+}
+
+.cabecalho .menu {
+    display: flex;
+}
+
+.cabecalho .menu li {
+    font-size: 32px;
+    padding: 0 16px;
+}
+
+.cabecalho .menu li:hover {
+    cursor: pointer;
+    color: #faef54;
+}
+
+.container .about {
+    padding-top: 80px;
+    overflow: hidden;
+    width: 100%;
+    background: rgb(30, 19, 45);
+    background: linear-gradient(0deg, rgba(48, 32, 70, 0.904) 0%, rgba(30, 19, 45, 0) 30%);
+    outline: 3px solid #EA2027;
+}
+
+.container .about .about-div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 0.25fr 0.9fr 0.25fr;
+    grid-column-gap: 10px;
+    max-width: 1386px;
+    margin: 0 auto;
+}
+
+.container .about .about-desc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .about .about-desc p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.container .about .about-div .char-div {
+    height: 100%;
+    margin-top: 1px;
+    z-index: -5;
+}
+
+.container .about .about-div .char {
+    height: 100%;
+}
+
+.container .about .heart {
+    width: 59px;
+    height: 59px;
+    margin: 31px;
+    position: relative;
+    filter: drop-shadow(0px 0px 20px #ff3b55);
+    animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        top: -10px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: -10px;
+    }
+}
+
+.endings {
+    background-color: rgb(0, 0, 0);
+}
+
+.endings .dialogue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: min(250px,40vh)
+}
+
+.endings .ballon {
+    /* margin: min(15px, 15vh) 0 0 min(39px, 2vw); */
+    max-width: 100%;
+}
+
+.endings .ballon-div {
+    /* height: 200px; */
+    position: relative;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.endings .dialogue p {
+    position: absolute;
+    font-size: min(24px, 2vw);
+    color: black;
+    /* width: 625px; */
+    height: 155px;
+    top: 8%;
+    left: 9%;
+}
+
+.endings .dialogue .p-blue {
+    color: rgb(95, 95, 255);
+}
+
+.endings .route {
+    /* height: 395px; */
+    /* height: 5vh; */
+    
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.endings .routes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+.endings .img-div {
+    position: relative;
+}
+
+.endings .img-route {
+    width: 1349px;
+}
+
+.endings .text-route {
+    position: absolute;
+    width: min(900px, 60vw);
+    top: 15%;
+    left: 28%;
+}
+
+.endings .route-name {
+    font-size: min(52px, 5vw);
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+    margin-bottom: min(25px, 2vh);
+}
+
+.endings .route-desc {
+    font-size: min(35px, 2vw);
+    color: rgb(238, 238, 238);
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+}
+
+.endings .text-route.genocide {
+    left: 11%;
+    text-align: right;
+}
+
+.endings .route-name.pacifist {
+    color: #00F151;
+}
+
+.endings .route-name.genocide {
+    color: #EA2027;
+}
+
+.endings .route-name.neutral {
+    color: #A4BCBD;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background: rgb(24, 9, 28);
+    background: linear-gradient(90deg, rgba(24,9,28,1) 0%, rgb(54, 29, 80) 50%, rgba(24,9,28,1) 100%);
+    outline: 3px solid #EA2027;
+}
+
+.rodape .purchase p {
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    padding: 42px;
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 10px black;
+}
+
+.rodape .purchase .platforms {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape .purchase i {
+    color: white;
+    font-size: 42px;
+    padding: 0 24px;
+    transition: 0.2s;
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 10px black;
+}
+
+.rodape .purchase i:hover {
+    color: #faef54;
+    font-size: 50px;
+}
+
+@media (max-width: 927px) {
+    .menu {
+        visibility: hidden;
+    }
+
+    .cabecalho .logo {
+        /* position: relative;
+        left: 55%; */
+        translate: 55%;
+    }
+}
+/* 
+.rodape .purchase .platforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape .purchase a {
+    width: 50px;
+    height: 50px;
+    margin: 0 24px;
+}
+
+.rodape .purchase i {
+    color: white;
+    font-size: 42px;
+    transition: 0.2s;
+}
+
+.rodape .purchase i:hover {
+    color: #faef54;
+    font-size: 50px;
+} */
